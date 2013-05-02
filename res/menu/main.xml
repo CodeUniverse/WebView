@@ -1,0 +1,45 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_back"
+        android:icon="@drawable/back"
+        android:orderInCategory="1"
+        android:showAsAction="always"
+        android:title="@string/webview_back"/>
+    <item
+        android:id="@+id/menu_forward"
+        android:icon="@drawable/forward"
+        android:orderInCategory="2"
+        android:showAsAction="always"
+        android:title="@string/webview_forward"/>
+    <item
+        android:id="@+id/menu_refresh"
+        android:icon="@drawable/refresh"
+        android:orderInCategory="3"
+        android:showAsAction="always"
+        android:title="@string/webview_refresh"/>
+    <item
+        android:id="@+id/menu_capture"
+        android:icon="@drawable/capture"
+        android:orderInCategory="4"
+        android:showAsAction="ifRoom"
+        android:title="@string/webview_capture"/>
+    <item
+        android:id="@+id/menu_text_increase"
+        android:icon="@drawable/increase"
+        android:orderInCategory="5"
+        android:showAsAction="ifRoom"
+        android:title="@string/webview_increase_text"/>
+    <item
+        android:id="@+id/menu_text_decrease"
+        android:icon="@drawable/decrease"
+        android:orderInCategory="6"
+        android:showAsAction="ifRoom"
+        android:title="@string/webview_decrease_text"/>
+     <item
+        android:id="@+id/menu_full_browser"
+        android:orderInCategory="7"
+        android:showAsAction="never"
+        android:title="@string/webview_full"/>
+
+</menu>

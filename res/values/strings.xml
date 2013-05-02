@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WebView</string>
+    <string name="webview_back">Back</string>
+    <string name="webview_forward">Forward</string>
+    <string name="webview_refresh">Refresh</string>
+    <string name="webview_increase_text">Increase TextSize</string>
+    <string name="webview_decrease_text">Decrease TextSize</string>
+    <string name="webview_capture">Capture Screen</string>
+    <string name="webview_full">Full Browser</string>
+    <string name="webview_go">Go</string>
+    <string name="webview_capture_success">Capture Saved!\n\nImage Stored @ /sdcard/CodeUniverse</string>
+    <string name="webview_capture_failure">Problem Storing Image, Check your SD Card</string>
+
+</resources>
