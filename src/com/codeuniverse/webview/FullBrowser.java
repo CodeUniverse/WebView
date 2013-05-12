@@ -27,8 +27,10 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 import android.os.Bundle;
 import android.os.Environment;
+import android.app.ActionBar;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -96,6 +98,14 @@ public class FullBrowser extends Activity {
             }
 		});
 	}
+	
+	@Override
+	protected void onStart() {
+		super.onStart();
+		ActionBar actionBar = this.getActionBar();
+		actionBar.setDisplayHomeAsUpEnabled(true);
+		actionBar.setDisplayShowTitleEnabled(true);
+	}
 
 	public class myWebClient extends WebViewClient {
 
@@ -145,7 +155,11 @@ public class FullBrowser extends Activity {
 
 	public boolean onOptionsItemSelected(android.view.MenuItem Item) {
 		switch (Item.getItemId()) {
-
+		case android.R.id.home:
+			Intent intent4 = new Intent(this, MainActivity.class);
+			intent4.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+			startActivity(intent4);
+			return true;	
 		case R.id.menu_refresh:
 			web.reload();
 			return true;
